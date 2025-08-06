@@ -1,0 +1,138 @@
+/* Reset bawaan */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Warna tema biru elegan */
+body {
+  background: linear-gradient(to bottom right, #e8f0ff, #ffffff);
+  padding: 20px;
+  color: #333;
+}
+
+.back-btn {
+  display: inline-block;
+  margin: 20px;
+  padding: 10px 18px;
+  background-color: #2563eb; /* Biru tua */
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-btn:hover {
+  background-color: #1d4ed8; /* Biru lebih gelap */
+  transform: translateX(-4px); /* Efek sedikit mundur */
+}
+
+.back-btn:active {
+  transform: scale(0.98);
+}
+
+.product-detail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.product-detail img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.product-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.product-info h2 {
+  font-size: 28px;
+  color: #0d47a1;
+}
+
+.product-info h3 {
+  font-size: 22px;
+  color: #2e7d32;
+}
+
+.product-info p,
+.product-info li {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.product-info ul {
+  padding-left: 20px;
+}
+
+button[onclick^="addToCart"] {
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button[onclick^="addToCart"]:hover {
+  background-color: #0097a7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product-detail {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-info {
+    width: 100%;
+  }
+}
+
+/* Tambahan efek transisi smooth */
+.product-detail,
+.product-info,
+.product-detail img {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover efek lembut */
+button,
+.back-btn {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover,
+.back-btn:hover {
+  transform: scale(1.05);
+}

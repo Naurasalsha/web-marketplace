@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="product-style.css" />
+    <link rel="stylesheet" href="contact-us.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h2>MyMarketPlace</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.us.html">contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <br />
+    <button class="back-btn" onclick="window.history.back()">⬅ Kembali</button>
+    <br />
+    <main class="contact-form">
+      <h2>Hubungi Kami</h2>
+      <br />
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="name">Nama Lengkap:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="subject">Subjek:</label>
+          <input type="text" id="subject" name="subject" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Pesan:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Kirim Pesan</button>
+      </form>
+    </main>
+
+    <footer>
+      <h4>MyMarketPlace</h4>
+      <h5>Made by Naura Salsha Putri</h5>
+    </footer>
+  </body>
+</html>

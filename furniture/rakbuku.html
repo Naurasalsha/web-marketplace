@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="detail.css" />
+    <link rel="stylesheet" href="cart.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Charger Fast Charging</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h2>MyMarketPlace</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.us.html">Contact Us</a></li>
+          <li></li>
+        </ul>
+      </nav>
+    </header>
+    <button class="back-btn" onclick="window.history.back()">⬅ Kembali</button>
+    <br /><br />
+    <div class="product-detail">
+      <div>
+        <img src="Rak buku copy.jpg" alt="Rak buku" />
+      </div>
+
+      <div class="product-info">
+        <h2>Headphone Bluetooth</h2>
+
+        <h3>Rp180.000</h3>
+
+        <p>Rak buku berbahan partikel board, hemat tempat</p>
+
+        <div>
+          <h4>Spesifikasi Produk:</h4>
+          <ul>
+            <li><strong>Ukuran:</strong> 80x30x90 cm</li>
+            <li><strong>Warna:</strong> Putih</li>
+            <li><strong>Material:</strong> Particle board</li>
+          </ul>
+        </div>
+
+        <p><strong>Stok:</strong> 10 unit</p>
+        <p><strong>Rating:</strong> 3/5 bintang</p>
+
+        <button onclick="addToCart('Rak buku', 180000)">
+          Tambah ke Keranjang
+        </button>
+      </div>
+    </div>
+    <button class="cart-btn" onclick="toggleCart()">🛒</button>
+
+    <div class="cart-sidebar">
+      <h3>Keranjang</h3>
+      <div id="cart-items"></div>
+      <div id="cart-total"></div>
+      <button onclick="checkout()">Checkout</button>
+    </div>
+    <footer>
+      <br />
+      <h4>MyMarketPlace</h4>
+      <h5>Made by Naura Salsha Putri</h5>
+      <br />
+    </footer>
+    <script src="cart.js"></script>
+  </body>
+</html>

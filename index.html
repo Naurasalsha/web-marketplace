@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="cart.css" />
+    <title>MyMarketPlace</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h2>MyMarketPlace</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.us.html">Contact Us</a></li>
+          <li></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="banner">
+      <div class="banner-content">
+        <h1>Welcome to MyMarketPlace</h1>
+        <p>Discover amazing products at unbeatable prices</p>
+        <a href="#products" class="cta-button">Shop Now</a>
+      </div>
+    </div>
+
+    <nav class="category-nav">
+      <h3>Kategori</h3>
+      <ul>
+        <li><a href="Elektronik.html">Elektronik</a></li>
+        <li><a href="Fashion.html">Fashion</a></li>
+        <li><a href="Furniture.html">Furniture</a></li>
+      </ul>
+    </nav>
+
+    <main id="products">
+      <h4>Recommended</h4>
+      <div class="product-container">
+        <div class="product">
+          <img
+            src="image/Headphone Bluetooth.jpg"
+            height="200"
+            width="200"
+            alt="Headphone Bluetooth"
+          />
+          <p>
+            Headphone Bluetooth<br />
+            Kategori: Elektronik<br />
+            Harga: Rp180.000<br />
+            <a href="elektronik/headphone.html">Detail</a>
+          </p>
+        </div>
+        <div class="product">
+          <img
+            src="image/Smartwatch.jpg"
+            height="200"
+            width="200"
+            alt="Smartwatch"
+          />
+          <p>
+            Smartwatch<br />
+            Kategori: Elektronik<br />
+            Harga: Rp250.000<br />
+            <a href="elektronik/smartwatch.html">Detail</a>
+          </p>
+        </div>
+        <div class="product">
+          <img src="image/Kemeja.jpg" height="200" width="200" alt="Kemeja" />
+          <p>
+            Kemeja<br />
+            Kategori: Fashion<br />
+            Harga: Rp120.000<br />
+            <a href="fashion/kemeja.html">Detail</a>
+          </p>
+        </div>
+        <div class="product">
+          <img src="image/Hoodie.jpg" height="200" width="200" alt="Hoodie" />
+          <p>
+            Hoodie<br />
+            Kategori: Fashion<br />
+            Harga: Rp100.000<br />
+            <a href="fashion/hoodie.html">Detail</a>
+          </p>
+        </div>
+        <div class="product">
+          <img
+            src="image/Meja lipat.jpg"
+            height="200"
+            width="200"
+            alt="Meja lipat"
+          />
+          <p>
+            Meja lipat<br />
+            Kategori: Furniture<br />
+            Harga: Rp200.000<br />
+            <a href="furniture/meja.html">Detail</a>
+          </p>
+        </div>
+        <div class="product">
+          <img
+            src="image/Kursi Gaming lipat.jpg"
+            height="200"
+            width="200"
+            alt="Kursi"
+          />
+          <p>
+            Kursi<br />
+            Kategori: Furniture<br />
+            Harga: Rp350.000<br />
+            <a href="furniture/kursi.html">Detail</a>
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <h4>MyMarketPlace</h4>
+      <h5>Made by Naura Salsha Putri</h5>
+    </footer>
+    <!-- Tombol keranjang -->
+    <button class="cart-btn" onclick="toggleCart()">🛒 Lihat Keranjang</button>
+
+    <!-- Sidebar Keranjang -->
+    <div class="cart-sidebar">
+      <h2>🛍 Keranjang</h2>
+      <div id="cart-items"></div>
+      <p id="cart-total">Total: Rp0</p>
+      <button onclick="checkout()">Checkout</button>
+    </div>
+    <script src="cart.js"></script>
+  </body>
+</html>
